@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Required for GitHub Pages project sites (https://username.github.io/repo-name/)
+  base: process.env.VITE_BASE || '/',
   plugins: [
     base44({
       // Support for legacy code that imports the base44 SDK with @/integrations, @/entities, etc.

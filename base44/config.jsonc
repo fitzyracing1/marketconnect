@@ -1,0 +1,14 @@
+{
+  "name": "New App",
+  "entities": {
+    "IdeaSubmission": {
+      "schema": "./entities/IdeaSubmission.jsonc"
+    },
+    "User": {
+      "schema": "./entities/User.jsonc"
+    }
+  },
+  "site": {
+    "serveCommand": "npm run dev"
+  }
+}

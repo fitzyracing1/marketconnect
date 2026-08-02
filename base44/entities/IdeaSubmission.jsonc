@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the idea"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description of the idea"
+    },
+    "category": {
+      "type": "string",
+      "description": "Category of the idea"
+    },
+    "status": {
+      "type": "string",
+      "description": "Current status of the submission",
+      "enum": ["pending", "approved", "rejected", "in_review"]
+    },
+    "submittedBy": {
+      "type": "string",
+      "description": "User ID of the submitter"
+    },
+    "contactEmail": {
+      "type": "string",
+      "description": "Contact email for the idea"
+    },
+    "attachments": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of attachment URLs"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": ["title", "description", "submittedBy"]
+}
